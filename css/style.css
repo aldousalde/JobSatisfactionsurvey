@@ -1,0 +1,180 @@
+.container {
+  background-color: goldenrod;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* VARIABLES */
+  --label-fontsize: 1.25rem;
+  --input-color: rgb(187, 187, 187);
+  --input-fontsize: 1rem;
+}
+
+.header {
+  text-align: center;
+  width: 80%;
+  max-width: 500px;
+  height: auto;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+
+#title {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0 auto;
+}
+
+#form-type {
+  font-family: "Courier New", Courier, monospace;
+  padding: 0;
+  margin: 0 auto;
+}
+
+#description {
+  font-family: "Times New Roman", Times, serif;
+}
+
+#survey-form {
+  background-color: white;
+  width: 80%;
+  max-width: 700px;
+  height: auto;
+  transition: transform 0.25s, box-shadow 0.25s;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 2rem 1rem;
+}
+
+#survey-form:focus-within {
+  box-shadow: 0px 40px 20px 25px rgba(0, 0, 0, 0.452);
+  transform: scale(1.025);
+  transition-timing-function: ease-out;
+}
+
+.div-form {
+  margin: 2rem;
+}
+
+#name-label,
+#email-label,
+#number-label,
+#department-label,
+#jobtype-label,
+#rating-label,
+#comment-label,
+#submit {
+  font-size: var(--label-fontsize);
+}
+
+#name,
+#email,
+#number {
+  display: block;
+  margin: 0.25rem 0px;
+  font-size: var(--input-fontsize);
+  width: 97%;
+  height: auto;
+  padding: 0.25rem;
+  text-align: left;
+  border: 0;
+  border-bottom: 1.75px solid gray;
+  outline: none;
+}
+
+#name:hover,
+#email:hover,
+#number:hover {
+  border-bottom: 1.75px solid black;
+}
+
+#name:focus,
+#email:focus,
+#number:focus {
+  border-bottom: 1.75px solid black;
+}
+
+#dropdown {
+  display: block;
+  margin: 0.5rem 0;
+  font-size: var(--input-fontsize);
+  width: 100%;
+  height: auto;
+  padding: 0.25rem;
+  border-color: var(--input-color);
+}
+
+#dropdown:hover {
+  outline: 1px solid black;
+}
+
+.input-choice {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+.hide-1,
+.hide-2,
+.hide-3,
+.hide-4,
+.hide-5 {
+  display: none;
+  font-size: 0.75rem;
+  width: 150px;
+  background-color: gray;
+  color: honeydew;
+  margin: 1rem;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+#training:hover+.hide-1 {
+  display: inline;
+  position: absolute;
+}
+
+#teamwork:hover+.hide-2 {
+  display: inline;
+  position: absolute;
+}
+
+#reward:hover+.hide-3 {
+  display: inline;
+  position: absolute;
+}
+
+#leadership:hover+.hide-4 {
+  display: inline;
+  position: absolute;
+}
+
+#empowerment:hover+.hide-5 {
+  display: inline;
+  position: absolute;
+}
+
+#comment {
+  margin: 1rem 0;
+  display: block;
+  width: 100%;
+  height: auto;
+  font-size: var(--input-fontsize);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#comment:hover {
+  outline: 1px solid black;
+}
+
+#submit {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: auto;
+  padding: 0.5rem;
+  background-color: goldenrod;
+  border-radius: 0.25rem;
+  border: none;
+  cursor: pointer;
+}
+
+#submit:hover {
+  background-color: gray;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css">
+  <title>Survey Form</title>
+</head>
+
+<body class="container">
+  <header class="header">
+    <img src="../images/briefcase.png" alt="">
+    <h1 id="title">JOB SATISFACTION </h1>
+    <h2 id="form-type">Survey Form</h2>
+    <p id="description">Please answer the following questions with an honest assessment of your job satisfaction during
+      the previous quarter.</p>
+  </header>
+
+  <form action="" id="survey-form">
+    <div class="div-form">
+      <label for="name" id="name-label">Name</label>
+      <input type="text" name="name" id="name" placeholder="Enter your name" required />
+    </div>
+    <div class="div-form ">
+      <label for="email" id="email-label">E-mail</label>
+      <input type="email" name="email" id="email" placeholder="Enter your E-mail address" required />
+    </div>
+    <div class="div-form">
+      <label for="number" id="number-label">Age</label>
+      <input type="number" name="number" id="number" placeholder="Enter your age" min="16" max="99" required />
+    </div>
+
+    <div class="div-form">
+      <label for="department" id="department-label">Department</label>
+      <select name="department" id="dropdown" required>
+        <option disabled selected value>Select current role</option>
+        <option value="hr">Human Resource</option>
+        <option value="marketing">Marketing</option>
+        <option value="finance">Finance</option>
+        <option value="operations">Operations Management</option>
+        <option value="it">IT</option>
+      </select>
+    </div>
+
+    <div class="div-form">
+      <label for="jobtype" id="jobtype-label">Job Type</label>
+      <label for="fulltime" class="input-choice"><input type="radio" name="jobtype" value="fulltime" checked></input>
+        Full-time</label>
+      <label for="parttime" class="input-choice"> <input type="radio" name="jobtype" value="parttime"></input>
+        Part-Time</label>
+      <label for="contract" class="input-choice"><input type="radio" name="jobtype" value="contract"></input>
+        Contract</label>
+      <label for="temporary" class="input-choice"><input type="radio" name="jobtype" value="temporary"></input>
+        Temporary</label>
+      <label for="internship" class="input-choice"> <input type="radio" name="jobtype" value="internship"></input>
+        Internship</label>
+      <label for="other" class="input-choice"><input type="radio" name="jobtype" value="other"></input> Other</label>
+    </div>
+
+    <div class="div-form">
+      <label for="rating" id="rating-label">What areas are you not satisfied?</label>
+      <span class="instruction">(Check all that apply.)</span>
+      <label for="training" class="input-choice"><input type="checkbox" name="rating" value="training"
+          id="training"></input>Employee Training <p class="hide-1"> Employee training and development refers to the
+          continued efforts of a company to boost the performance of its employees</p></label>
+      <label for="teamwork" class="input-choicee"><input type="checkbox" name="rating" value="teamwork"
+          id="teamwork"></input>Teamwork <p class="hide-2"> Teamwork improves the efficiency of a workplace, makes the
+          environment friendlier and encourages innovation.</p></label>
+      <label for="reward" class="input-choice"> <input type="checkbox" name="rating" value="reward"
+          id="reward"></input>Employee Reward and Recognition <p class="hide-3">Employee empowerment is defined as the
+          ways in which organizations provide their employees with a certain degree of autonomy and control in their
+          day-to-day activities.</p></label>
+      <label for="leadership" class="input-choice"><input type="checkbox" name="rating" value="leadership"
+          id="leadership"></input>Management Leadership<p class="hide-4"> Employee recognition and rewarding is a
+          process through which employers or business owners make a conscious effort to reward and award your employees
+          not just to acknowledge their work but also to motivate them to continue with the same passion</p></label>
+      <label for="empowerment" class="input-choice"> <input type="checkbox" name="rating" value="empowerment"
+          id="empowerment"></input>Employee Empowerment <p class="hide-5">While management includes focus on planning,
+          organizing, staffing, directing and controlling; leadership is mainly a part of directing function of
+          management. Leaders focus on listening, building relationships, teamwork, inspiring, motivating and persuading
+          the followers.</p></label>
+    </div>
+
+    <div class="div-form">
+      <label for="comment" id="comment-label">Comments & Suggestions</label>
+      <textarea name="comment" id="comment" cols="30" rows="10"
+        placeholder="Enter your comments & suggestions here..."></textarea>
+    </div>
+    <div class="div-form">
+      <input type="submit" id="submit">
+    </div>
+  </form>
+  <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+</body>
+
+</html>
